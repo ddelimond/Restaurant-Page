@@ -4,8 +4,8 @@ A front-end project for a simple restaurant website, built as part of The Odin P
 
 Whether you're a patron looking for a sweet treat or a developer looking for a practical example of dynamic front-end development, you've come to the right place!
 
-🚀 Live Demo 
-https://ddelimond.github.io/Restaurant-Page/
+<a href="https://ddelimond.github.io/Restaurant-Page/"> 🚀 Live Demo </a>
+
 
 Check out the live tavern!
 ✨ Features
