@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "BubaDEMO-Outline";
+    src: url("./assets/fonts/BubaDEMO-Outline.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: Nagbuloe Regular;
+    src: url("./assets/fonts/Nagbuloe Shadow Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Big Fish";
+    src: url("./assets/fonts/Big Fish Regular.otf") format("opentype");
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.imgContainer{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    bottom: -15vh;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.imgContainer img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+
+}
+
+.menuBtn{
+
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: rgb(243,131,162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    font-family:"Big Fish",sans-serif;
+    font-size: 20px;
+    padding: 10px 0;
+    transition: box-shadow 1s, height 1s, width 1s;
+}
+
+.menuBtn:hover{
+    box-shadow: 3px 0px 20px rgb(243,131,162);
+    width: 7.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 90px;
+
+
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#content.home{
+    background-image: url("./assets/ice_cream2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#content.home::before{
+    content: ".";
+    position: absolute;
+    top: 97px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.homeText{
+    font-family: "Big Fish",sans-serif;
+    margin: 0;
+    color: rgb(252, 236, 152);
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 50px;
+    z-index: 2;
+    text-align: center;
+}
+
+.home p {
+    color: white;
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family:  "Montserrat",sans-serif;
+;
+}
+
+/*#content footer p{*/
+/*    color: rgb(243,131,162);*/
+/*    font-size: 20px;*/
+/*    font-family: "Big Fish", sans-serif;*/
+/*}*/
+
+
+
+.logoContainer{
+    background-color: rgb(197,244,251);
+    width: 90px;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(170,240,251,70%);
+}
+
+
+
+/*MENU*/
+
+.menuHero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    font-family: "Big Fish", sans-serif;
+    color: rgb(252, 236, 152);
+}
+
+.menuHero h1{
+    position: absolute;
+    font-size: 130px;
+    top: 130px;
+}
+
+.menuHero div{
+    width: 100%;
+    height: 100%;
+}
+
+.menuItemsContainer{
+    width:100%;
+    margin-bottom:20px;
+}
+
+
+span{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.menuHero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.itemImgContainer img{
+    border-radius: 25px 0 0 25px;
+}
+
+.itemImgContainer img{
+object-fit: cover;
+    width: 100%;
+    height: 98.5%;
+    border: black solid 2px;
+}
+
+
+
+ .menuItemTextContainer{
+    border-radius: 0 25px 25px 0;
+     border-right: black solid 2px;
+     border-bottom: black solid 2px;
+     border-top: black solid 2px;
+
+}
+
+.itemImgContainer{
+    width: 500px;
+}
+
+
+.menuItemContainer{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.menuItemTextContainer{
+    /*background-color: white;*/
+    color: black;
+    width: 80%;
+    height: 300px;
+    padding: 10px;
+    font-size: 10px;
+
+}
+
+.menuItemTextContainer h4 {
+    font-family: 'Big Fish',sans-serif;
+}
+
+.menuItemContainer,.itemImgContainer,.menuItemTextContainer {
+    /*border: solid black 1px;*/
+}
+
+.menu {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family:  "Montserrat",sans-serif;
+}
+
+
+
+/*ABOUT*/
+
+
+.outline{
+    border: solid black 1px;
+    width: 600px;
+}
+
+.aboutImgContainer{
+    width: 100%;
+}
+
+.aboutImgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.ownerContainer, .missionContainer, .locationContainer{
+    padding: 20px;
+
+}
+
+.ownerContainer p, .missionContainer p, .locationContainer p{
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.about h2, .about h4{
+    font-family: "Big Fish", sans-serif;
+    color: rgb(252, 236, 152);
+}
+
+.about h4{
+    font-size: 20px;
+}
+
+
+.about{
+    padding-bottom: 20px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(197,244,251);
+    width: 100vw;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    /*bottom: -100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: rgb(243,131,162);
+    font-family: "Big Fish", sans-serif;
+}
+
