@@ -1,5 +1,4 @@
 
-import cones from './assets/cones.png';
 
 let contentContainer = document.querySelector('#content');
 
@@ -26,18 +25,6 @@ function generateHome (){
         homeBodyText.innerHTML = 'Beat the heat with our handcrafted ice cream made fresh daily! Perfect for scorching summer days or whenever you\'re craving something sweet.'
 
         contentContainer.append(homeBodyText);
-
-//     creating image container
-        let imgContainer = document.createElement('div');
-        imgContainer.classList.add('imgContainer');
-
-//     creating image element
-        let homeImg = new Image();
-        homeImg.src = cones;
-        homeImg.alt = 'picture of colorful ice cream cones';
-
-        imgContainer.append(homeImg);
-        contentContainer.append(imgContainer);
 
 }
 
